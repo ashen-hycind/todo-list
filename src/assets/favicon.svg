@@ -1,0 +1,16 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle fill="#cb1f27" id="svg_1" r="26.1" cy="32" cx="32" class="st0"/>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#cb1f27" fill="none" id="svg_2" d="m52.1,12.7c4.8,5 7.8,11.8 7.8,19.3c0,15.4 -12.5,27.9 -27.9,27.9s-27.9,-12.5 -27.9,-27.9s12.5,-27.9 27.9,-27.9c3.4,0 6.7,0.6 9.7,1.7" class="st2"/>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#cb1f27" fill="none" id="svg_3" d="m45.5,7.6c1.2,0.6 2.3,1.4 3.3,2.2" class="st2"/>
+  <circle opacity="0.15" id="svg_4" r="22.8" cy="32" cx="32" class="st3"/>
+  <circle opacity="0.15" id="svg_5" r="17.5" cy="32" cx="32" class="st3"/>
+  <text style="cursor: text;" xml:space="preserve" text-anchor="start" font-family="'Simonetta', serif" font-size="24" id="svg_11" y="39.840171" x="24.866412" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff">A</text>
+ </g>
+</svg>

@@ -1,0 +1,9 @@
+:host{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5rem auto 7rem;
+}
+
+section{
+    border: 1px solid lightgray;
+}
