@@ -15,6 +15,6 @@ export class HeaderComponent implements OnInit {
   onClickLogIn(){
   }
 
-  @Output()   loginClicked:EventEmitter = new EventEmitter();
+  @Output()   loginClicked:EventEmitter<String> = new EventEmitter();
   // show: boolean = false
 }

@@ -1,9 +1,40 @@
 :host {
-    color: red;
-    position: fixed;
-    top: calc(50% - 10rem);
-    left: calc(50% - 15rem);
-    height: 20rem;
-    width: 30rem;
-    border: 1px solid lightgray;
+  position: fixed;
+  top: calc(50% - 10rem);
+  left: calc(50% - 15rem);
+  height: 20rem;
+  width: 30rem;
+  border: 1px solid lightgray;
+  border-radius: 0.4rem;
+  box-shadow: -10px 11px 20px -1px lightgrey;
+  
+}
+.close {
+  // text-align: right;
+  // padding-right: 1rem;
+  // padding-top: 1rem;
+  color: lightgray;
+  padding: 0.4rem;
+  font-size: 2rem;
+}
+.close:hover {
+    cursor: pointer;
+  background-color: #eeeeee;
+  color: black;
+}
+.box {
+  display: grid;
+  justify-content: right;
+  align-items: center;
+  grid-template-columns: 15rem auto 0rem;
+}
+p {
+  margin: 0;
+  font-size: 1.5rem;
+  padding-top: 0.8rem;
+}
+form {
+  display: grid;
+  grid-template-rows: 3rem 4rem 3rem;
+  padding: 2rem;
 }

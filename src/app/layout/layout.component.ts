@@ -12,5 +12,5 @@ export class LayoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Output() loginClicked: EventEmitter = new EventEmitter();
+  @Output() loginClicked: EventEmitter<String>= new EventEmitter();
 }

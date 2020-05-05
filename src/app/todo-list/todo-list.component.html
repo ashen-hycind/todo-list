@@ -1,0 +1,11 @@
+<mat-selection-list #shoes>
+  <mat-list-option *ngFor="let shoe of typesOfShoes">
+    {{shoe}}
+  </mat-list-option>
+</mat-selection-list>
+<p>
+  Total Items : {{typesOfShoes.length}}
+</p>
+<p>
+  Items checked : {{shoes.selectedOptions.selected.length}}
+</p> 

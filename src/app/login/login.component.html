@@ -1,1 +1,29 @@
-<p>login works!</p>
+
+<div class="box">
+  <p>Login</p>
+  <div class="close" (click)="$event.stopPropagation();closeLogin.emit()">
+    &times;
+  </div>
+</div>
+
+<form>
+  <mat-form-field>
+    <mat-label>Username</mat-label>
+    <input matInput type="text" >
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" type="button">
+    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-checkbox>Remember me</mat-checkbox>
+
+  <button type="button" mat-stroked-button color ="primary">Login</button>
+</form>
+
+
+

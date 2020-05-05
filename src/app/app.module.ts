@@ -18,6 +18,11 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatCardModule} from '@angular/material/card';
+import { SignupComponent } from './signup/signup.component';
+import {MatIconModule} from '@angular/material/icon';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     LayoutComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,10 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatRadioModule,
     MatSelectModule,
     MatSlideToggleModule,
-    MatSliderModule
+    MatSliderModule,
+    MatCardModule,
+    MatIconModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
