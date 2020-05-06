@@ -1,3 +1,62 @@
 p {
   font-size: 1rem;
+  padding-left: 1rem;
+}
+.box {
+  width: 20rem;
+  align-items: center;
+}
+.mat {
+  text-align: right;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto max-content;
+  align-items: center;
+  > p{
+    margin: 0;
+  }
+}
+mat-form-field {
+    padding: 1rem;
+    padding-top: 0%;
+}
+
+.header {
+  background-color: #673bb7;
+  height: 6rem;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: max-content auto max-content max-content;
+  >p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0%;
+  }
+  >.button {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: grid;
+    color: white;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+  }
+}
+.p {
+  font-size: 1.5rem;
+  color: lightgrey;
+  padding: 0.5rem;
+  margin: 0%;
+}
+.a {
+  padding-bottom: 0%;
+}
+.title {
+  display: grid;
+  grid-template-columns: 15rem 3rem;
+  align-items: center;
 }

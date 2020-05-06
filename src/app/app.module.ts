@@ -23,6 +23,7 @@ import { SignupComponent } from './signup/signup.component';
 import {MatIconModule} from '@angular/material/icon';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import {MatListModule} from '@angular/material/list';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,8 @@ import {MatListModule} from '@angular/material/list';
     MatCardModule,
     MatIconModule,
     MatListModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

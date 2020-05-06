@@ -11,5 +11,24 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  typesOfShoes :string[] = ['hello', 'bye','sdfgh','asdfg', 'hdus']
+  typesOfShoes: string[] = []
+
+  deleteListItem(item: any) {
+    // alert('Item will be deleted' + item)
+    let idx = this.typesOfShoes.indexOf(item);
+
+    if (idx > -1) {
+      this.typesOfShoes.splice(idx, 1);
+    }
+  }
+
+  onKeydown(evnt: any) {
+    // alert('enter')
+    this.typesOfShoes.push(this.item)
+    this.item = ''; 
+  }
+
+  item: string = '';
+  title: string = 'Untitled';
+  editTitle: boolean = false;
 }

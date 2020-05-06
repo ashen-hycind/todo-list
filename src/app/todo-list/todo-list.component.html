@@ -1,11 +1,74 @@
-<mat-selection-list #shoes>
-  <mat-list-option *ngFor="let shoe of typesOfShoes">
-    {{shoe}}
-  </mat-list-option>
-</mat-selection-list>
+<div class="header">
+  <p>Hello User</p>
+
+  <span></span>
+
+  <button mat-icon-button
+           color="white">
+    <mat-icon color="white">add_circle_outline</mat-icon>
+  </button>
+
+  <button mat-button color="primary" class="button">Logout</button>
+
+</div>
+
+
+<div class="title">
+  <p class="p"
+     id="p"> {{ title }} </p>
+
+  <button mat-icon-button
+          type="button"
+          (click)="$event.stopPropagation();editTitle = !editTitle"
+          color="warn">
+    <mat-icon>
+      edit
+    </mat-icon>
+  </button>
+
+  <mat-form-field class="a"
+                  *ngIf="editTitle">
+    <input type="text"
+           matInput
+           (keydown.enter)="editTitle = !editTitle"
+           placeholder="Title"
+           [(ngModel)]="title">
+  </mat-form-field>
+</div>
+
+
+<div class="box">
+  <mat-selection-list #shoes>
+    <mat-list-option *ngFor="let shoe of typesOfShoes"
+                     checkboxPosition="before">
+      <div class="row">
+        <p>
+          {{shoe}}
+        </p>
+
+        <button mat-icon-button
+                color="warn">
+          <mat-icon (click)="$event.stopPropagation();deleteListItem(shoe)">
+            delete
+          </mat-icon>
+        </button>
+      </div>
+    </mat-list-option>
+
+  </mat-selection-list>
+</div>
+
+<mat-form-field>
+  <input type="text"
+         matInput
+         placeholder="Add new item"
+         (keydown.enter)="onKeydown($event)"
+         [(ngModel)]="item">
+</mat-form-field>
+
 <p>
   Total Items : {{typesOfShoes.length}}
 </p>
 <p>
   Items checked : {{shoes.selectedOptions.selected.length}}
-</p> 
+</p>
