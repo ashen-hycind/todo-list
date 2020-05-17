@@ -2,8 +2,20 @@
     height: 100%;
     display: grid;
     grid-template-rows: 5rem auto 7rem;
+    // grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
 section{
-    border: 1px solid lightgray;
+    margin: 0;
+    padding: 1rem;
+}
+
+.img{
+    margin: 2rem;
+    border: 1px solid grey;
+}
+
+myCanvas{
+    border: 1px solid red;
+
 }

@@ -1,7 +1,23 @@
 <app-header (loginClicked)="loginClicked.emit($event)"></app-header>
 
 <section>
-
+  <app-todo-list></app-todo-list>
 </section>
 
 <app-footer></app-footer>
+
+<!-- 
+<div class="img">
+  <label>
+    Open file dialog
+  </label>
+  <input type="file"
+         #file
+         (change)="onLoad(file.files)">
+  style="position: fixed; top: -100em">
+  <canvas #myCanvas
+          id="myCanvas"
+          width="578"
+          height="200"></canvas>
+</div>
+<button (click)="$event.stopPropagation();upload()"> Upload </button> -->

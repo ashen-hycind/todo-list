@@ -1,0 +1,58 @@
+<header>
+  <p class="p"
+     id="p"
+     *ngIf="!editTitle"> {{ title }} </p>
+
+  <mat-form-field class="a"
+                  *ngIf="editTitle">
+    <input type="text"
+           matInput
+           (keydown.enter)="editTitle = !editTitle"
+           placeholder="Title"
+           [(ngModel)]="title">
+  </mat-form-field>
+
+  <button mat-icon-button
+          type="button"
+          (click)="$event.stopPropagation();editTitle = !editTitle">
+    <mat-icon>
+      edit
+    </mat-icon>
+  </button>
+</header>
+
+<section>
+  <mat-selection-list #shoes>
+    <mat-list-option *ngFor="let item of items"
+                     checkboxPosition="before">
+      <div class="row">
+        <p>
+          {{ item }}
+        </p>
+
+        <button mat-icon-button
+                class="delete">
+          <mat-icon (click)="$event.stopPropagation();deleteListItem(item)">
+            delete
+          </mat-icon>
+        </button>
+      </div>
+    </mat-list-option>
+
+  </mat-selection-list>
+</section>
+
+<mat-form-field>
+  <input type="text"
+         matInput
+         placeholder="Add new item"
+         (keydown.enter)="onKeydown($event)"
+         [(ngModel)]="an_item">
+</mat-form-field>
+
+<p>
+  Total Items : {{ items.length }}
+</p>
+<p>
+  Items checked : {{ shoes.selectedOptions.selected.length}}
+</p>

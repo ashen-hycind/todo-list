@@ -1,34 +1,43 @@
 import { Component, OnInit } from '@angular/core';
 
+interface ToDo {
+  title: string;
+  items: string[];
+}
+
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent implements OnInit {
+  ToDoList: ToDo[] = [];
 
-  constructor() { }
-
+  constructor() {
+  }
+  
   ngOnInit(): void {
+    this.addList();
   }
-  typesOfShoes: string[] = []
-
-  deleteListItem(item: any) {
-    // alert('Item will be deleted' + item)
-    let idx = this.typesOfShoes.indexOf(item);
-
-    if (idx > -1) {
-      this.typesOfShoes.splice(idx, 1);
-    }
+  
+  addList() {
+    this.ToDoList.push({
+      title: 'Untitled',
+      items: ['']
+    });
   }
 
-  onKeydown(evnt: any) {
-    // alert('enter')
-    this.typesOfShoes.push(this.item)
-    this.item = ''; 
-  }
 
-  item: string = '';
-  title: string = 'Untitled';
-  editTitle: boolean = false;
+  // typesOfShoes: string[] = []
+
+
+  // onKeydown(event: any) {
+  //   // alert('enter')
+  //   this.typesOfShoes.push(this.item)
+  //   this.item = ''; 
+  // }
+
+  // item: string = ''; 
+  // title: string = 'Untitled';
+  // editTitle: boolean = false;
 }

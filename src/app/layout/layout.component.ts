@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-layout',
@@ -7,10 +8,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly http: HttpClient) { }
 
   ngOnInit(): void {
   }
 
-  @Output() loginClicked: EventEmitter<String>= new EventEmitter();
+  @Output() loginClicked: EventEmitter<String> = new EventEmitter();
+
 }

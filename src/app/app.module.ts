@@ -24,6 +24,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import {MatListModule} from '@angular/material/list';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ListComponent } from './todo-list/list/list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToDoComponent } from './todo-list/to-do/to-do.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     FooterComponent,
     LoginComponent,
     SignupComponent,
-    TodoListComponent
+    TodoListComponent,
+    ListComponent,
+    ToDoComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +57,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     MatIconModule,
     MatListModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
